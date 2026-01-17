@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Jogo do Carro</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div id="menu">
+    <h1>MINI GAMES</h1>
+    <button onclick="startGame()">Jogo do Carro 🚗</button><br>
+    <button disabled>Jogo da Cobrinha 🐍 </button>
+</div>
+
+<div id="game">
+    <h2>RETRO RACER</h2>
+    <div id="score">Ultrapassagens: <span id="points">0</span></div>
+
+    <div id="board">
+        <div id="player"></div>
+    </div>
+
+    <div class="controls">
+        <button onclick="moveLeft()">⬅ ESQUERDA</button>
+        <button onclick="moveRight()">DIREITA ➡</button>
+    </div>
+
+    <div class="controls">
+        <button onclick="stopGame()">MENU</button>
+    </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
